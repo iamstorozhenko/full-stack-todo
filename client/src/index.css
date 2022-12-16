@@ -10,11 +10,24 @@ body {
 }
 
 .container {
+  width: 100vw;
+  height: 100vh;
   margin: 0 auto;
   text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  /* background-color: blueviolet; */
+}
+
+#light {
+  background-color: #c0deff;
+  color: #ffe5f1;
+}
+
+#dark {
+  background-color: #2b3467;
+  color: #eb455f;
 }
 
 .table {
