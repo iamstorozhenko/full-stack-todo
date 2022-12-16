@@ -22,6 +22,12 @@ h1 {
   font-size: 44px;
 }
 
+h3 {
+  margin: 130px 0 40px 0;
+  font-size: 32px;
+  color: #9a9a9a;
+}
+
 button {
   cursor: pointer;
 }
@@ -87,15 +93,64 @@ input[type="text"] {
 .modal__content {
   padding: 20px;
   border-radius: 12px;
-  background-color: #fff;
-  height: 200px;
-  width: 300px;
+  background-color: #222;
+  height: 480px;
+  width: 480px;
+  text-align: center;
 }
 
 .modal__header {
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
+}
+
+.modal-btns__wrappper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.modal-update__btn {
+  width: 90px;
+  height: 36px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-left: 10px;
+  background-color: #ffd24c;
+}
+
+.modal-update__btn:hover {
+  transition: all 0.3s ease;
+  background-color: #e1b93f;
+}
+
+.modal-close__btn {
+  width: 90px;
+  height: 36px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-left: 10px;
+  background-color: #b2b2b2;
+}
+
+.modal-close__btn:hover {
+  transition: all 0.3s ease;
+  background-color: #848484;
+}
+
+.exit__btn {
+  float: right;
+  cursor: pointer;
+  color: #9a9a9a;
+}
+
+.exit__btn:hover {
+  transition: all 0.3s ease;
+  color: #9a9a9a;
 }
 
 .wrapper__list {

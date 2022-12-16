@@ -29,30 +29,33 @@ const Modal = ({ active, setActive, todo }) => {
       onClick={() => setActive(false)}
     >
       <div className="modal__content" onClick={(e) => e.stopPropagation()}>
-        <div className="modal__header">
-          <h1>Edit todo</h1>
-          <span onClick={() => setActive(false)}>x</span>
-        </div>
+        <span onClick={() => setActive(false)} className="exit__btn">
+          X
+        </span>
+        <h3>You can edit your todo</h3>
         <input
           type="text"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
+          className="edit__input"
         />
-        <button
-          className="edit__btn"
-          onClick={(e) => editDescriptionHandler(e)}
-        >
-          Edit
-        </button>
-        <button
-          className="close__btn"
-          onClick={() => {
-            setActive(false);
-            setDescription(todo.description); // save original input val
-          }}
-        >
-          Close
-        </button>
+        <div className="modal-btns__wrappper">
+          <button
+            className="modal-update__btn"
+            onClick={(e) => editDescriptionHandler(e)}
+          >
+            Update
+          </button>
+          <button
+            className="modal-close__btn"
+            onClick={() => {
+              setActive(false);
+              setDescription(todo.description); // save original input val
+            }}
+          >
+            Close
+          </button>
+        </div>
       </div>
     </div>
   );
