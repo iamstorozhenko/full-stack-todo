@@ -31,8 +31,22 @@ const ListTodos = () => {
   }, []);
 
   return (
-    <div>
-      <table className="table">
+    <div className="wrapper__list">
+      {todos.map((todo) => (
+        <div key={todo.todo_id} className="todo__wrapper">
+          <h2>{todo.description}</h2>
+          <div className="btns__wrapper">
+            <EditTodo todo={todo} />
+            <button
+              onClick={() => deleteTodo(todo.todo_id)}
+              className="delete__btn"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      ))}
+      {/* <table className="table">
         <thead>
           <tr>
             <th>Description</th>
@@ -52,13 +66,8 @@ const ListTodos = () => {
               </td>
             </tr>
           ))}
-          {/* <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-          </tr> */}
         </tbody>
-      </table>
+      </table> */}
     </div>
   );
 };

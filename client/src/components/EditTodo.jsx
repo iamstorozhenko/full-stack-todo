@@ -7,7 +7,7 @@ const EditTodo = ({ todo }) => {
 
   return (
     <div>
-      <button onClick={() => setModalActive(true)}>Edit</button>
+      <button onClick={() => setModalActive(true)} className="edit__btn">Edit</button>
       <Modal active={modalActive} setActive={setModalActive} todo={todo} />
     </div>
   );

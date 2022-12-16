@@ -10,24 +10,20 @@ body {
 }
 
 .container {
-  width: 100vw;
-  height: 100vh;
   margin: 0 auto;
   text-align: center;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  /* background-color: blueviolet; */
+  background-color: #37474f;
+  color: #dee4e7;
 }
 
-#light {
-  background-color: #c0deff;
-  color: #ffe5f1;
+h1 {
+  font-size: 44px;
 }
 
-#dark {
-  background-color: #2b3467;
-  color: #eb455f;
+button {
+  cursor: pointer;
 }
 
 .table {
@@ -51,6 +47,38 @@ body {
   transition: 0.5s;
 }
 
+input {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #ffffff;
+  font-size: 18px;
+}
+
+input[type="text"] {
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.add__btn {
+  margin-left: 20px;
+  width: 60px;
+  height: 40px;
+  border: none;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: #dee4e7;
+  cursor: pointer;
+}
+
+.add__btn:hover {
+  transition: all 0.3s ease;
+  background-color: #bec6ca;
+}
+
 .modal.active {
   opacity: 1;
   pointer-events: all;
@@ -68,4 +96,60 @@ body {
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
+}
+
+.wrapper__list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 60px auto;
+  width: 900px;
+  padding: 10px;
+  background-color: #dee4e7;
+  border-radius: 20px;
+}
+
+.todo__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  height: 90px;
+  margin: 20px auto;
+  padding: 16px;
+  align-items: center;
+  background-color: #222;
+  border-radius: 14px;
+}
+
+.btns__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.edit__btn {
+  width: 90px;
+  height: 36px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #ffd24c;
+}
+
+.delete__btn {
+  width: 90px;
+  height: 36px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-left: 10px;
+  background-color: #b2b2b2;
+}
+.edit__btn:hover {
+  transition: all 0.3s ease;
+  background-color: #d8b139;
+}
+
+.delete__btn:hover {
+  transition: all 0.3s ease;
+  background-color: #9a9a9a;
 }

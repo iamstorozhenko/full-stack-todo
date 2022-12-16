@@ -34,7 +34,7 @@ const InputTodo = () => {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
-        <button>Add</button>
+        <button className='add__btn'>Add</button>
       </form>
     </div>
   );
